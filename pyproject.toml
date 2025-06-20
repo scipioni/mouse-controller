@@ -1,0 +1,30 @@
+[project]
+name = "mouse-controller"
+version = "0.1.0"
+description = "Native Bluetooth HID Mouse Controller in Python"
+readme = "README.md"
+authors = [
+    { name = "Stefano Scipioni", email = "scipio.it@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "configargparse>=1.7",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.1.0",
+    "black>=23.0",
+    "mypy>=1.0",
+    "pytest>=7.0",
+    "ipython>=8.0",
+]
+
+
+[project.scripts]
+mousecontroller = "mousecontroller.main:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
