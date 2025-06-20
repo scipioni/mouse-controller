@@ -9,6 +9,9 @@ authors = [
 requires-python = ">=3.12"
 dependencies = [
     "configargparse>=1.7",
+    "dbus-python>=1.4.0",
+    "pygame>=2.6.1",
+    "pygobject>=3.52.3",
 ]
 
 [project.optional-dependencies]
